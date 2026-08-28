@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>なないろ ｜ AIチャットによる子育て相談窓口（デモ）</title>
+<meta name="description" content="AIがそっと話をきく子育て相談チャット（デモ）">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="chat-page">
+
+<div class="app" id="app">
+
+  <!-- ===== サイドバー ===== -->
+  <aside class="sidebar" id="sidebar">
+    <button class="sidebar-close" id="sidebarClose" aria-label="メニューを閉じる">✕</button>
+    <nav class="side-nav">
+      <a href="#" class="side-item">
+        <svg viewBox="0 0 24 24" class="side-ico"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6"/></svg>
+        <span>プロフィール編集</span>
+      </a>
+      <a href="#" class="side-item">
+        <svg viewBox="0 0 24 24" class="side-ico"><path d="M4 9v6l9 4V5L4 9z"/><path d="M4 15H3.5A1.5 1.5 0 0 1 2 13.5v-3A1.5 1.5 0 0 1 3.5 9H4"/><path d="M18 8a5 5 0 0 1 0 8"/></svg>
+        <span>お知らせ</span>
+      </a>
+      <a href="#" class="side-item">
+        <svg viewBox="0 0 24 24" class="side-ico"><path d="M6 10a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>
+        <span>通知設定</span>
+      </a>
+      <a href="#" class="side-item">
+        <svg viewBox="0 0 24 24" class="side-ico"><path d="M4 7h16"/><path d="M9 7V5h6v2"/><path d="M6 7l1 13h10l1-13"/></svg>
+        <span>相談ログ消去</span>
+      </a>
+      <a href="index.html" class="side-item">
+        <svg viewBox="0 0 24 24" class="side-ico"><path d="M14 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8"/><path d="M17 8l4 4-4 4"/><path d="M21 12H10"/></svg>
+        <span>ログアウト</span>
+      </a>
+    </nav>
+  </aside>
+
+  <!-- ===== メインチャット ===== -->
+  <div class="chat-col">
+
+    <header class="chat-topbar">
+      <button class="menu-btn" id="menuBtn" aria-label="メニューを開く">☰</button>
+      <h1 class="chat-topbar-title">なないろ　-AIチャットによる【子育て相談窓口】-</h1>
+    </header>
+
+    <div class="chat-scroll" id="phoneScreen">
+      <div class="messages" id="messages"></div>
+    </div>
+
+    <!-- 開始前フッター：相談を開始する -->
+    <div class="chat-bottom start-bar" id="startBar">
+      <button class="start-pill" id="startBtn">
+        <svg viewBox="0 0 24 24" class="start-ico"><path d="M20 12a8 8 0 0 1-8 8H4l1.5-3.5A8 8 0 1 1 20 12z"/><path d="M8 11h8M8 14h5"/></svg>
+        相談を開始する
+      </button>
+    </div>
+
+    <!-- 開始後フッター：入力欄 -->
+    <div class="chat-bottom composer" id="composer" hidden>
+      <input type="text" id="msgInput" placeholder="ここに気持ちを書いてください" autocomplete="off">
+      <button id="sendBtn" aria-label="送信">送信</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
