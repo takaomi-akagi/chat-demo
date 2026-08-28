@@ -14,7 +14,7 @@
   ov.id = 'gate-overlay';
   ov.innerHTML =
     '<form class="gate-card" id="gate-form">' +
-      '<p class="gate-brand">子育て相談チャット（デモ）</p>' +
+      '<p class="gate-brand">不登校相談チャット（デモ）</p>' +
       '<p class="gate-lead">関係者向けのデモページです。合言葉を入力してください。</p>' +
       '<input type="password" id="gate-input" class="gate-input" placeholder="合言葉" autocomplete="off" autofocus>' +
       '<button type="submit" class="gate-btn">開く</button>' +
