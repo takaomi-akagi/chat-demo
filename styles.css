@@ -13,6 +13,37 @@
 
 *{box-sizing:border-box}
 
+/* ---------- 簡易パスワードゲート ---------- */
+#gate-overlay{
+  position:fixed;inset:0;z-index:9999;
+  background:#f6f1e6;
+  display:flex;align-items:center;justify-content:center;
+  padding:24px;
+  font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",sans-serif;
+}
+.gate-card{
+  width:100%;max-width:360px;
+  background:#fffdf8;
+  border:1px solid #e4ddcc;
+  border-radius:14px;
+  padding:32px 28px;
+  text-align:center;
+}
+.gate-brand{margin:0 0 6px;font-weight:700;color:#557d49}
+.gate-lead{margin:0 0 20px;font-size:.9rem;color:#6d6a5f;line-height:1.7}
+.gate-input{
+  width:100%;padding:13px 14px;
+  border:1px solid #e4ddcc;border-radius:8px;
+  font:inherit;font-size:1rem;background:#fff;margin-bottom:12px;
+}
+.gate-btn{
+  width:100%;padding:13px;
+  background:#6fa060;color:#fff;border:none;border-radius:8px;
+  font:inherit;font-weight:700;cursor:pointer;
+}
+.gate-btn:hover{background:#557d49}
+.gate-error{margin:12px 0 0;color:#b4442f;font-size:.85rem}
+
 html{scroll-behavior:smooth}
 
 body{
