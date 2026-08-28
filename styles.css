@@ -256,15 +256,13 @@ main > .wrap{padding-top:44px;padding-bottom:64px}
 /* アバター */
 .avatar{
   flex:none;width:52px;height:52px;border-radius:50%;
-  background:#fdfbf4;border:1px solid #efe7d5;
-  display:grid;grid-template-columns:1fr 1fr;place-content:center;
-  font-size:.62rem;font-weight:700;line-height:1.1;text-align:center;
-  padding:8px;
+  background:var(--green-bg);border:1px solid #d9e5cf;
+  display:grid;place-items:center;
 }
-.avatar .a1{color:#e8663f}
-.avatar .a2{color:#e6a52e}
-.avatar .a3{color:#5aa9c4}
-.avatar .a4{color:#6fae5a}
+.avatar .ai-label{
+  font-size:.95rem;font-weight:700;letter-spacing:.02em;
+  color:var(--green-dk);
+}
 
 /* 吹き出し */
 .bubble{

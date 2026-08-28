@@ -55,7 +55,7 @@ function addAI(text, options){
 
   const avatar = document.createElement('div');
   avatar.className = 'avatar';
-  avatar.innerHTML = '<span class="a1">な</span><span class="a2">な</span><span class="a3">い</span><span class="a4">ろ</span>';
+  avatar.innerHTML = '<span class="ai-label">AI</span>';
 
   const group = document.createElement('div');
   group.className = 'group';
@@ -115,7 +115,7 @@ function addAlert(){
   row.className = 'row ai';
   const avatar = document.createElement('div');
   avatar.className = 'avatar';
-  avatar.innerHTML = '<span class="a1">な</span><span class="a2">な</span><span class="a3">い</span><span class="a4">ろ</span>';
+  avatar.innerHTML = '<span class="ai-label">AI</span>';
   const group = document.createElement('div');
   group.className = 'group';
   const bubble = document.createElement('div');
@@ -143,7 +143,7 @@ function scrollBottom(){
 /* ===== オンボーディング（選択肢会話） ===== */
 startBtn.addEventListener('click', () => {
   startBar.hidden = true;
-  addAI('こんにちは。「なないろ」です。ここは、あなたの気持ちをそっと聞く場所です。はじめる前に、2つ教えてください。');
+  addAI('こんにちは。ここは、あなたの気持ちをそっと聞く場所です。はじめる前に、2つ教えてください。');
   setTimeout(askWard, 500);
 });
 
